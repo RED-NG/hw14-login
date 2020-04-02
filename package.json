@@ -1,0 +1,25 @@
+{
+  "name": "hw14-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RED-NG/hw14-login.git"
+  },
+  "author": "Philip Ng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RED-NG/hw14-login/issues"
+  },
+  "homepage": "https://github.com/RED-NG/hw14-login#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "passport": "^0.4.1",
+    "nodemon": "^2.0.2"
+  }
+}
