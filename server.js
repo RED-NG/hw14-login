@@ -1,5 +1,8 @@
-//require dotenv variable for session's secret key
-require("dotenv").config();
+//loads in all dotenv variables; if we're not in development,
+//require development the dotenv variable dependency and call config
+if (process.env.NODE_ENV) {
+  require("dotenv").config();
+}
 
 // Requiring necessary npm packages
 var express = require("express");
