@@ -1,8 +1,8 @@
 //loads in all dotenv variables; if we're not in development,
 //require development the dotenv variable dependency and call config
-if (process.env.NODE_ENV !== "production") {
-  require("dotenv").config();
-}
+// if (process.env.NODE_ENV !== "production") {
+//   require("dotenv").config();
+// }
 
 // Requiring necessary npm packages
 var express = require("express");
@@ -23,7 +23,7 @@ app.use(express.static("public"));
 // We need to use sessions to keep track of our user's login status
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: "keyboard cat",
     resave: false,
     saveUninitialized: false,
   })
