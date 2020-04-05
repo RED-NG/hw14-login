@@ -1,14 +1,11 @@
-//loads in all dotenv variables; if we're not in development,
-//require development the dotenv variable dependency and call config
-if (process.env.NODE_ENV) {
-  require("dotenv").config();
-}
-
 // Requiring necessary npm packages
 var express = require("express");
 var session = require("express-session");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
+
+// Requiring our env file so we can hide our secret key
+require("dotenv").config();
 
 // Setting up port and requiring models for syncing
 var PORT = process.env.PORT || 8080;
